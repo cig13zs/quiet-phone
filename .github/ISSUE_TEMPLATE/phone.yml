@@ -1,0 +1,42 @@
+name: Add my phone
+description: Ads or junk on a phone that Quiet Phone doesn't cover yet
+title: "Phone: <brand> <model>"
+labels: [phone-list]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks. Package names are what we need. With USB debugging on, run `npx quiet-phone scan --json > scan.json`, or `adb shell pm list packages` and paste the lines you suspect.
+        Please don't paste your serial number.
+  - type: input
+    id: phone
+    attributes:
+      label: Brand, model and OS version
+      placeholder: Redmi Note 13, HyperOS 2.0.3, Android 15
+    validations:
+      required: true
+  - type: input
+    id: country
+    attributes:
+      label: Where it was bought
+      description: Preinstalled apps differ by region.
+      placeholder: Philippines
+  - type: textarea
+    id: packages
+    attributes:
+      label: Package names and what each one shows you
+      placeholder: |
+        com.example.lockscreen - the news cards on the lock screen
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Where you learned what it does
+      description: A link to a forum post, article, app store page or teardown. Every entry in the lists needs one.
+  - type: checkboxes
+    id: tested
+    attributes:
+      label: Tested
+      options:
+        - label: I turned these off on my phone and it kept working normally for a few days
