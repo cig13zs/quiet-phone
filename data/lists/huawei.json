@@ -1,0 +1,18 @@
+{
+  "id": "huawei",
+  "name": "Huawei (EMUI and older Honor phones)",
+  "packages": [
+    { "id": "com.huawei.magazine", "label": "Magazine unlock", "category": "lockscreen", "risk": "safe",
+      "reason": "Downloads lock-screen picture sets with promo links.",
+      "sources": ["https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"] },
+    { "id": "com.huawei.hifolder", "label": "Online folders", "category": "promo", "risk": "safe",
+      "reason": "The 'recommended apps' rows inside home-screen folders.",
+      "sources": ["https://consumer.huawei.com/en/mobileservices/mobilecloud/", "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"] },
+    { "id": "com.ironsource.appcloud.oobe.huawei", "label": "Essential apps (ironSource)", "category": "promo", "risk": "safe",
+      "reason": "Promotes sponsored apps and nudges you to install them.",
+      "sources": ["https://aura.ironsrc.com/"] },
+    { "id": "com.huawei.intelligent", "label": "HiBoard / Huawei Assistant", "category": "promo", "risk": "caution",
+      "reason": "The swipe-left feed with shopping recommendations. Its cards go with it.",
+      "sources": ["https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"] }
+  ]
+}

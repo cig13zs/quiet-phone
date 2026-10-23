@@ -1,0 +1,9 @@
+{
+  "id": "realme",
+  "name": "realme extras",
+  "packages": [
+    { "id": "com.realme.securitycheck", "label": "Security check", "category": "junk", "risk": "caution",
+      "reason": "An extra scanner with ads. Google Play Protect still checks your apps.",
+      "sources": ["https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"] }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "motorola",
+  "name": "Motorola",
+  "packages": [
+    { "id": "com.motorola.ccc.notification", "label": "Motorola Notifications", "category": "promo", "risk": "safe",
+      "reason": "Product tips and promotional notifications from Motorola.",
+      "sources": ["https://play.google.com/store/apps/details?id=com.motorola.ccc.notification"] },
+    { "id": "com.dti.motorola", "label": "Mobile Services Manager (Digital Turbine)", "category": "promo", "risk": "safe",
+      "reason": "Digital Turbine's installer that adds sponsored apps.",
+      "sources": ["https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"] },
+    { "id": "com.aura.oobe.motorola", "label": "MotoApps (ironSource)", "category": "promo", "risk": "safe",
+      "reason": "Suggests and installs sponsored apps at setup and after.",
+      "sources": ["https://en.wikipedia.org/wiki/IronSource", "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"] },
+    { "id": "com.motorola.help", "label": "Moto feedback", "category": "junk", "risk": "safe",
+      "reason": "Asks you to rate the phone and sends feedback to Motorola.",
+      "sources": ["https://play.google.com/store/apps/details?id=com.motorola.help"] },
+    { "id": "com.motorola.demo", "label": "Demo mode", "category": "junk", "risk": "safe",
+      "reason": "The shop-display demo mode.",
+      "sources": ["https://source.android.com/devices/tech/display/retail-mode"] },
+    { "id": "com.motorola.brapps", "label": "App Box", "category": "promo", "risk": "caution",
+      "reason": "Motorola's catalogue of suggested apps.",
+      "sources": ["https://play.google.com/store/apps/details?id=com.motorola.brapps"] },
+    { "id": "com.motorola.genie", "label": "Device Help", "category": "junk", "risk": "caution",
+      "reason": "Motorola's help and diagnostics app. Keep it if you use it for repairs.",
+      "sources": ["https://play.google.com/store/apps/details?id=com.motorola.genie"] }
+  ]
+}

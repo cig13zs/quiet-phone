@@ -1,0 +1,30 @@
+{
+  "id": "vivo",
+  "name": "vivo and iQOO (Funtouch OS and OriginOS)",
+  "packages": [
+    { "id": "com.vivo.magazine", "label": "Lockscreen Poster", "category": "lockscreen", "risk": "safe",
+      "reason": "Puts stories and promo posters on the lock screen.",
+      "sources": ["https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"] },
+    { "id": "com.vivo.appstore", "label": "V-Appstore", "category": "promo", "risk": "caution",
+      "reason": "vivo's app store. Pushes app promos, but also updates some vivo apps.",
+      "sources": ["https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"] },
+    { "id": "com.vivo.hiboard", "label": "Smart Launcher feed", "category": "promo", "risk": "caution",
+      "reason": "The swipe-left cards page with suggested content. Its shortcuts go with it.",
+      "sources": ["https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"] },
+    { "id": "com.vivo.globalsearch", "label": "Global Search", "category": "promo", "risk": "caution",
+      "reason": "Home-screen search with promoted results. The search swipe stops working.",
+      "sources": ["https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"] },
+    { "id": "com.vivo.browser", "label": "vivo Browser", "category": "junk", "risk": "caution",
+      "reason": "Browser with ads and news pushes. Set another browser as default first.",
+      "sources": ["https://play.google.com/store/apps/details?id=com.vivo.browser"] },
+    { "id": "com.bbk.theme", "label": "i Theme", "category": "junk", "risk": "caution",
+      "reason": "Theme and wallpaper store with promos. You can't change themes while it is off.",
+      "sources": ["https://play.google.com/store/apps/details?id=com.bbk.theme"] },
+    { "id": "com.vivo.assistant", "label": "Jovi assistant", "category": "junk", "risk": "caution",
+      "reason": "vivo's assistant cards and suggestions.",
+      "sources": ["https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"] },
+    { "id": "com.vivo.pushservice", "label": "vivo push", "category": "promo", "risk": "expert",
+      "reason": "vivo's own push channel. Some vivo app notifications may stop.",
+      "sources": ["https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"] }
+  ]
+}

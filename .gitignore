@@ -1,0 +1,15 @@
+node_modules/
+dist/
+dist-cli/
+tests/.frames/
+test-results/
+*.log
+
+# Restore files hold a phone's serial; keep them off GitHub
+quiet-phone-restore*.json
+
+# Build notes for the lead; they stay on this machine
+BUILD-PROMPT.md
+BUILD-REPORT.md
+PROGRESS.md
+_archive/

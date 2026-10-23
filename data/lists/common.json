@@ -1,0 +1,27 @@
+{
+  "id": "common",
+  "name": "Found on many brands",
+  "packages": [
+    { "id": "com.glance.internet", "label": "Glance", "category": "lockscreen", "risk": "safe",
+      "reason": "Puts news, games and ads on the lock screen. The lock screen works the same without it.",
+      "sources": ["https://glance.com/", "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"] },
+    { "pattern": "^com\\.glance\\.", "label": "Glance (phone-maker edition)", "category": "lockscreen", "risk": "safe",
+      "reason": "A brand-specific build of Glance, the lock-screen news and ads feed.",
+      "sources": ["https://glance.com/"] },
+    { "id": "com.facebook.appmanager", "label": "Meta App Manager", "category": "promo", "risk": "safe",
+      "reason": "Meta's preinstalled updater. Facebook and Instagram from the Play Store update without it.",
+      "sources": ["https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"] },
+    { "id": "com.facebook.services", "label": "Meta Services", "category": "promo", "risk": "safe",
+      "reason": "Meta background service that ships with the phone, not with any app you installed.",
+      "sources": ["https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"] },
+    { "id": "com.facebook.system", "label": "Meta App Installer", "category": "promo", "risk": "safe",
+      "reason": "A placeholder that exists to get Meta apps installed. It does nothing else.",
+      "sources": ["https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"] },
+    { "id": "com.netflix.partner.activation", "label": "Netflix partner activation", "category": "promo", "risk": "safe",
+      "reason": "Ties a preinstalled Netflix to the phone maker's deal. Netflix itself keeps working.",
+      "sources": ["https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"] },
+    { "id": "com.google.android.apps.bard", "label": "Gemini", "category": "ai", "risk": "caution",
+      "reason": "Google's Gemini app. Holding the power or home button stops opening it.",
+      "sources": ["https://play.google.com/store/apps/details?id=com.google.android.apps.bard"] }
+  ]
+}

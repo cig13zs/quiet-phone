@@ -1,0 +1,21 @@
+{
+  "id": "honor",
+  "name": "Honor (MagicOS)",
+  "packages": [
+    { "id": "com.hihonor.magazine", "label": "Magazine unlock", "category": "lockscreen", "risk": "safe",
+      "reason": "Downloads lock-screen picture sets (Magic Pictorial).",
+      "sources": ["https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"] },
+    { "id": "com.hihonor.detectrepair", "label": "Smart diagnosis", "category": "junk", "risk": "safe",
+      "reason": "Background diagnosis service you can run from the support site instead.",
+      "sources": ["https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"] },
+    { "id": "com.hihonor.assistant", "label": "AI Suggestions", "category": "promo", "risk": "caution",
+      "reason": "Suggestion cards and swipe-left content. The cards go with it.",
+      "sources": ["https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"] },
+    { "id": "com.hihonor.gameassistant", "label": "Game Suite", "category": "promo", "risk": "caution",
+      "reason": "Games hub with game recommendations. Games still run.",
+      "sources": ["https://club.hihonor.com/in/topic/16341/detail.htm"] },
+    { "id": "com.hihonor.appmarket", "label": "HONOR App Market", "category": "promo", "risk": "caution",
+      "reason": "Sends app suggestions. Apps you got from it stop updating by themselves.",
+      "sources": ["https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation"] }
+  ]
+}

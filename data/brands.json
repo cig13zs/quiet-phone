@@ -1,0 +1,146 @@
+{
+  "about": "One button per brand. 'match' is compared, lower-cased, with ro.product.brand and ro.product.manufacturer. 'lists' are files in data/lists, applied in order. Menu names in the steps differ a little between OS versions; they were written against the versions sold in 2025-2026.",
+  "brands": [
+    {
+      "id": "xiaomi", "name": "Xiaomi", "sub": "Redmi · POCO", "match": ["xiaomi", "redmi", "poco"],
+      "lists": ["xiaomi", "common"],
+      "devOptions": [
+        "Open Settings › About phone.",
+        "Tap OS version (HyperOS) or MIUI version 7 times, until it says you are a developer.",
+        "Go to Settings › Additional settings › Developer options.",
+        "Turn on USB debugging. If a change later fails with a permission error, also turn on USB debugging (Security settings); Xiaomi asks for a SIM card and a Mi account for that one."
+      ],
+      "settings": [
+        { "title": "Lock-screen stories", "steps": ["Settings › Lock screen › Wallpaper Carousel (or Glance), turn it off."] },
+        { "title": "Personalised ads", "steps": ["Settings › Passwords & security › Privacy › Ad services, turn off Personalised ad recommendations."] },
+        { "title": "Ads inside Xiaomi apps", "steps": ["In File Manager, Security, Cleaner, Downloads, Music, Themes and GetApps: open the app's settings and turn off Receive recommendations (sometimes under About or More settings)."] },
+        { "title": "App Vault", "steps": ["Pinch the home screen › Settings (or More) › turn off App Vault."] }
+      ]
+    },
+    {
+      "id": "samsung", "name": "Samsung", "sub": "Galaxy A · M · S", "match": ["samsung"],
+      "lists": ["samsung", "common"],
+      "devOptions": [
+        "Open Settings › About phone › Software information.",
+        "Tap Build number 7 times and enter your PIN.",
+        "Go back to Settings › Developer options (at the bottom).",
+        "Turn on USB debugging."
+      ],
+      "settings": [
+        { "title": "Lock-screen stories (Glance)", "steps": ["Settings › Lock screen › Wallpaper services, choose None."] },
+        { "title": "Samsung Free", "steps": ["Pinch the home screen, swipe to the leftmost page and turn Samsung Free off."] },
+        { "title": "Customisation Service", "steps": ["Settings › Privacy › Customisation Service (or Samsung account › Privacy), turn off customised content and ads."] },
+        { "title": "Marketing notifications", "steps": ["Galaxy Store › Menu › Settings, turn off marketing notifications. Do the same in Samsung Members and Samsung Health if you use them."] }
+      ]
+    },
+    {
+      "id": "realme", "name": "realme", "sub": "realme UI", "match": ["realme"],
+      "lists": ["coloros", "realme", "common"],
+      "devOptions": [
+        "Open Settings › About device › Version.",
+        "Tap Build number 7 times and enter your PIN.",
+        "Go to Settings › Additional settings › Developer options.",
+        "Turn on USB debugging."
+      ],
+      "settings": [
+        { "title": "Lock-screen stories (Glance)", "steps": ["Settings › Lock screen › Glance for realme (or Lock Screen Magazine), turn it off."] },
+        { "title": "Recommendations", "steps": ["Settings › Additional settings › System services (or Privacy) › turn off Get recommendations / Personalised recommendations."] },
+        { "title": "Hot Apps folders", "steps": ["Open the Hot Apps or Hot Games folder, open its settings and turn off app recommendations, then remove the folder."] },
+        { "title": "App Market and browser pushes", "steps": ["Long-press the notification › turn off notifications for App Market and Browser."] }
+      ]
+    },
+    {
+      "id": "oppo", "name": "OPPO", "sub": "OnePlus · ColorOS", "match": ["oppo", "oneplus"],
+      "lists": ["coloros", "common"],
+      "devOptions": [
+        "Open Settings › About device › Version.",
+        "Tap Build number 7 times and enter your PIN.",
+        "Go to Settings › Additional settings (System settings on newer phones) › Developer options.",
+        "Turn on USB debugging."
+      ],
+      "settings": [
+        { "title": "Lock Screen Magazine", "steps": ["Settings › Wallpapers & style (or Lock screen) › Lock Screen Magazine, turn it off."] },
+        { "title": "Recommendations", "steps": ["Settings › Privacy › turn off Personalised recommendations; in App Market › Settings, turn off recommendations."] },
+        { "title": "Hot Apps folders", "steps": ["Open the Hot Apps folder, open its settings and turn off recommendations, then remove the folder."] }
+      ]
+    },
+    {
+      "id": "vivo", "name": "vivo", "sub": "iQOO · Funtouch OS", "match": ["vivo", "iqoo"],
+      "lists": ["vivo", "common"],
+      "devOptions": [
+        "Open Settings › About phone › Software version.",
+        "Tap Software version 7 times.",
+        "Go to Settings › System management (or Additional settings) › Developer options.",
+        "Turn on USB debugging."
+      ],
+      "settings": [
+        { "title": "Lock-screen posters", "steps": ["Settings › Lock screen & wallpaper (or Wallpaper & style) › turn off the poster / magazine lock screen."] },
+        { "title": "App store and browser pushes", "steps": ["Long-press the promo notification › turn off notifications for V-Appstore and Browser."] },
+        { "title": "Recommendations", "steps": ["Settings › Security & privacy › Privacy › turn off Personalised recommendations where it is offered."] }
+      ]
+    },
+    {
+      "id": "transsion", "name": "Infinix", "sub": "Tecno · itel", "match": ["infinix", "tecno", "itel", "transsion"],
+      "lists": ["transsion", "common"],
+      "devOptions": [
+        "Open Settings › About phone.",
+        "Tap Build number 7 times.",
+        "Go to Settings › System › Developer options.",
+        "Turn on USB debugging."
+      ],
+      "settings": [
+        { "title": "Magazine lock screen", "steps": ["Settings › Lock screen (or Wallpaper) › Magazine lock screen, turn it off."] },
+        { "title": "Promo notifications", "steps": ["Long-press any promo notification › turn off notifications for Phone Master, Palm Store, AHA Games and the browser."] },
+        { "title": "Home-screen suggestions", "steps": ["Long-press the home screen › Settings › turn off app suggestions or Hot Apps."] }
+      ]
+    },
+    {
+      "id": "motorola", "name": "Motorola", "sub": "moto g · edge", "match": ["motorola", "moto", "lenovo"],
+      "lists": ["motorola", "common"],
+      "devOptions": [
+        "Open Settings › About phone.",
+        "Tap Build number 7 times and enter your PIN.",
+        "Go to Settings › System › Developer options.",
+        "Turn on USB debugging."
+      ],
+      "settings": [
+        { "title": "Lock-screen stories (Glance)", "steps": ["Settings › Display (or Lock screen) › Glance, turn it off."] },
+        { "title": "Motorola promos", "steps": ["Settings › Apps › Motorola Notifications › Notifications, turn them off."] }
+      ]
+    },
+    {
+      "id": "honor", "name": "Honor", "sub": "MagicOS", "match": ["honor", "hihonor"],
+      "lists": ["honor", "huawei", "common"],
+      "devOptions": [
+        "Open Settings › About phone.",
+        "Tap Build number 7 times and enter your PIN.",
+        "Go to Settings › System & updates › Developer options.",
+        "Turn on USB debugging, and Allow ADB debugging in charge only mode if you see it."
+      ],
+      "settings": [
+        { "title": "Magazine unlock", "steps": ["Settings › Home screen & wallpaper › Magazine unlock, turn off the subscriptions or switch to a plain wallpaper."] },
+        { "title": "Folder suggestions", "steps": ["Open any home-screen folder with a 'Recommended' row and switch it off in the folder."] },
+        { "title": "Personalised ads", "steps": ["Settings › Privacy › Ads and privacy, turn off personalised ads."] }
+      ]
+    },
+    {
+      "id": "huawei", "name": "Huawei", "sub": "EMUI", "match": ["huawei"],
+      "lists": ["huawei", "common"],
+      "devOptions": [
+        "Open Settings › About phone.",
+        "Tap Build number 7 times and enter your PIN.",
+        "Go to Settings › System & updates › Developer options.",
+        "Turn on USB debugging, and Allow ADB debugging in charge only mode if you see it."
+      ],
+      "settings": [
+        { "title": "Magazine unlock", "steps": ["Settings › Home screen & wallpaper › Magazine unlock, turn off the subscriptions or switch to a plain wallpaper."] },
+        { "title": "Folder suggestions", "steps": ["Open any home-screen folder with a 'Recommended' row and switch it off in the folder."] },
+        { "title": "Personalised ads", "steps": ["Settings › Privacy › Ads and privacy, turn off personalised ads."] }
+      ]
+    }
+  ],
+  "everyPhone": [
+    { "title": "Advertising ID", "steps": ["Settings › Google › Ads (or Settings › Privacy › Ads), tap Delete advertising ID."] },
+    { "title": "Any app that sends promos", "steps": ["Long-press the promo notification, tap the gear, and turn off that kind of notification."] }
+  ]
+}
