@@ -4,16 +4,57 @@
   "description": "Turn off lock-screen ads, phone-maker ad services and preinstalled junk on Android, from a browser tab. Reversible.",
   "license": "MIT",
   "type": "module",
-  "scripts": {},
-  "dependencies": {
-    "@yume-chan/adb": "2.6.4",
-    "@yume-chan/adb-credential-web": "2.1.0",
-    "@yume-chan/adb-daemon-webusb": "2.3.2",
-    "@yume-chan/stream-extra": "2.6.1"
+  "author": "jju1s",
+  "homepage": "https://cig13zs.github.io/quiet-phone/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cig13zs/quiet-phone.git"
+  },
+  "bugs": "https://github.com/cig13zs/quiet-phone/issues",
+  "keywords": [
+    "android",
+    "adb",
+    "debloat",
+    "bloatware",
+    "glance",
+    "lock-screen",
+    "ads",
+    "webusb",
+    "xiaomi",
+    "samsung",
+    "realme",
+    "infinix"
+  ],
+  "bin": {
+    "quiet-phone": "dist-cli/quiet-phone.mjs"
+  },
+  "files": [
+    "dist-cli",
+    "data",
+    "SKILL.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vite build -c vite.cli.config.ts",
+    "build:cli": "vite build -c vite.cli.config.ts",
+    "typecheck": "tsc -p .",
+    "test": "vitest run",
+    "e2e": "node e2e/e2e.mjs",
+    "media": "node e2e/media.mjs",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
   },
   "devDependencies": {
     "@types/node": "26.6.5",
     "@types/w3c-web-usb": "1.0.14",
+    "@yume-chan/adb": "2.6.4",
+    "@yume-chan/adb-credential-web": "2.1.0",
+    "@yume-chan/adb-daemon-webusb": "2.3.2",
+    "@yume-chan/stream-extra": "2.6.1",
     "happy-dom": "21.0.4",
     "playwright": "1.63.0",
     "typescript": "7.0.2",
