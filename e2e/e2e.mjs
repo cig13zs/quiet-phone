@@ -127,7 +127,7 @@ try {
     await ctx.close();
   });
 
-  await step('CLI: scan, apply and restore through a stand-in adb', async () => {
+  if (process.platform !== 'win32') await step('CLI: scan, apply and restore through a stand-in adb', async () => {
     const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'qp-cli-'));
     const statePath = path.join(dir, 'state.json');
     const profile = { serial: 'E2E1', model: 'Redmi_Note_13', props: { 'ro.product.brand': 'Redmi', 'ro.product.manufacturer': 'Xiaomi', 'ro.product.marketname': 'Redmi Note 13', 'ro.build.version.release': '15' }, packages: { android: 'enabled', 'com.miui.home': 'enabled', 'com.miui.msa.global': 'enabled', 'com.miui.android.fashiongallery': 'enabled', 'com.miui.daemon': 'enabled' }, launcher: 'com.miui.home', keyboard: 'com.google.android.inputmethod.latin', files: {} };

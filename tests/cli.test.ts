@@ -22,7 +22,8 @@ afterEach(() => fs.rmSync(dir, { recursive: true, force: true }));
 
 const state = () => JSON.parse(fs.readFileSync(path.join(dir, 'state.json'), 'utf8'));
 
-describe('local adb device', () => {
+// The stand-in adb is a script with a shebang, which Windows can't run directly.
+describe.skipIf(process.platform === 'win32')('local adb device', () => {
   it('lists devices', async () => {
     expect(await listDevices(ADB)).toEqual([{ serial: 'ABC123', state: 'device', model: 'Redmi_Note_13' }]);
   });
