@@ -82,12 +82,13 @@ button { font: inherit; color: inherit; }
 
 /* Header */
 .top { display: flex; align-items: center; gap: 10px; padding: 18px 0 8px; }
+.top a.home { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; }
 .logo { width: 34px; height: 34px; flex: none; }
 .brandname { white-space: nowrap; font-weight: 780; font-size: 19px; letter-spacing: -0.02em; }
 .top .spacer { flex: 1; }
 .top a.gh { font-size: 14px; color: var(--muted); text-decoration: none; padding: 6px 10px; border-radius: 999px; border: 1px solid var(--line); }
 .top a.gh:hover { color: var(--ink); }
-.demo-pill { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: var(--caution); background: var(--caution-soft); padding: 4px 10px; border-radius: 999px; }
+.demo-pill { white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: var(--caution); background: var(--caution-soft); padding: 4px 10px; border-radius: 999px; }
 
 /* Hero */
 .hero { padding: 28px 0 8px; }

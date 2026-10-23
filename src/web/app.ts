@@ -72,7 +72,7 @@ export function mountApp(root: HTMLElement, opts: AppOptions) {
 
   const header = () => `
     <header class="top">
-      ${icons.logo}<span class="brandname">Quiet Phone</span>
+      <a class="home" href="./" aria-label="Quiet Phone, start page">${icons.logo}<span class="brandname">Quiet Phone</span></a>
       ${opts.demo ? `<span class="demo-pill">${icons.info.replace('<svg', '<svg width="15" height="15"')} Demo phone<span class="wide">, nothing real changes</span></span>` : ''}
       <span class="spacer"></span>
       <a class="gh" href="${REPO}" rel="noopener">Source</a>

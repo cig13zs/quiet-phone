@@ -1,3 +1,4 @@
+/// <reference types="vitest/config" />
 import { defineConfig } from 'vite';
 
 // The site is served from https://cig13zs.github.io/quiet-phone/
