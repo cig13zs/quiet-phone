@@ -19,6 +19,8 @@ against a pretend Redmi, so you can see every step without plugging anything in.
 
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-support-ff5e5b?logo=ko-fi&logoColor=white)](https://ko-fi.com/jju1s)
 
+> **Early release.** The flow and the safety checks are tested against a simulated phone, and the lists come from public reports, not from every model in hand. If you try it on a real phone, tell me what worked and what didn't with the [Add my phone](https://github.com/cig13zs/quiet-phone/issues/new/choose) form. Start with one safe item, and keep the restore file.
+
 ## What you need
 
 - An Android phone and a USB cable that carries data (some charging cables don't).
