@@ -295,7 +295,7 @@ export function mountApp(root: HTMLElement, opts: AppOptions) {
   const runRows = (verbDone: string) => `
     <div class="rows">${st.run.map(({ pkg, label }) => {
       const r = st.results.get(pkg);
-      const cls = !r ? '' : r.ok ? 'done' : 'fail';
+      const cls = !r ? '' : r.ok ? 'ok' : 'fail';
       const ic = !r ? '<span class="spinner" style="width:18px;height:18px;border-width:2.5px"></span>' : r.ok ? icons.okCircle : icons.badCircle;
       const msg = !r ? '' : r.ok ? (r.message === 'Turned off' || r.message === 'Back on' ? verbDone : r.message) : r.message;
       return `<div class="pkg ${cls}"><span class="state-ic ${r ? (r.ok ? 'ok' : 'bad') : ''} ${st.fresh === pkg ? 'pop' : ''}">${r || st.stage === 'applying' || st.stage === 'restoring' ? ic : ''}</span><span class="lbl">${esc(label)}</span><span></span>${msg ? `<span class="res">${esc(msg)}</span>` : ''}<span class="id">${esc(pkg)}</span></div>`;
