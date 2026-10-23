@@ -364,13 +364,14 @@ export function mountApp(root: HTMLElement, opts: AppOptions) {
   function render() {
     let main: string;
     const s = st.session;
+    const waitingStage = ['connecting', 'asking', 'loading'].includes(st.stage);
     if (st.stage === 'intro' || !s && !['connecting', 'asking', 'loading'].includes(st.stage)) main = intro();
     else if (['connecting', 'asking', 'loading'].includes(st.stage)) main = waiting();
     else if (st.stage === 'ready') main = ready(s!);
     else if (st.stage === 'applying' || st.stage === 'restoring') main = running();
     else if (st.stage === 'done') main = doneView();
     else main = restoredView();
-    root.innerHTML = `<div class="wrap" data-stage="${st.stage}">${header()}<main>${main}</main>${footer()}</div>`;
+    root.innerHTML = `<div class="wrap" data-stage="${st.stage}">${header()}<main>${main}</main>${waitingStage ? '' : footer()}</div>`;
     st.fresh = null;
   }
 
@@ -435,6 +436,7 @@ export function mountApp(root: HTMLElement, opts: AppOptions) {
     st.notice = null;
     st.stage = 'applying';
     render();
+    window.scrollTo?.({ top: 0 });
     try {
       const results = await s.apply(plan, {
         allowUninstall: st.allowUninstall,
@@ -474,6 +476,7 @@ export function mountApp(root: HTMLElement, opts: AppOptions) {
     st.notice = null;
     st.stage = 'restoring';
     render();
+    window.scrollTo?.({ top: 0 });
     try {
       await s.restore({
         onStep: (r) => {

@@ -190,7 +190,7 @@ code { white-space: nowrap; background: var(--surface-2); border: 1px solid var(
 .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); margin-right: 6px; box-shadow: 0 0 0 4px var(--accent-soft); vertical-align: 1px; }
 
 /* Waiting */
-.waiting { text-align: center; padding: 34px 20px; }
+.waiting { text-align: center; padding: 48px 20px; margin-top: 12vh; }
 .waiting .big-ic { width: 76px; height: 76px; margin: 0 auto 14px; color: var(--accent); }
 .waiting h2 { font-size: 22px; }
 .spinner { width: 22px; height: 22px; border-radius: 50%; border: 3px solid var(--accent-soft); border-top-color: var(--accent); animation: spin 0.8s linear infinite; display: inline-block; vertical-align: middle; }
