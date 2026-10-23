@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 
 // Bundles the CLI and everything it uses into one file, so `npx quiet-phone` installs nothing else.
 export default defineConfig({
+  publicDir: false,
   build: {
     ssr: 'src/cli/main.ts',
     outDir: 'dist-cli',
