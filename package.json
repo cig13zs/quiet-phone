@@ -1,0 +1,23 @@
+{
+  "name": "quiet-phone",
+  "version": "0.1.0",
+  "description": "Turn off lock-screen ads, phone-maker ad services and preinstalled junk on Android, from a browser tab. Reversible.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {},
+  "dependencies": {
+    "@yume-chan/adb": "2.6.4",
+    "@yume-chan/adb-credential-web": "2.1.0",
+    "@yume-chan/adb-daemon-webusb": "2.3.2",
+    "@yume-chan/stream-extra": "2.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "@types/w3c-web-usb": "1.0.14",
+    "happy-dom": "21.0.4",
+    "playwright": "1.63.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.5",
+    "vitest": "5.0.5"
+  }
+}
