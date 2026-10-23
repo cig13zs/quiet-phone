@@ -283,6 +283,7 @@ body.capture .demo-pill, body.capture .top a.gh { display: none; }
 
 @media (max-width: 560px) {
   .demo-pill .wide { display: none; }
+  .top a.gh { display: none; }
   .twocol { grid-template-columns: 1fr; }
   .brand { min-height: 58px; padding: 10px; }
   .brand .n { font-size: 15px; }
